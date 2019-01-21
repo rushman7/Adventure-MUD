@@ -48,28 +48,28 @@ li {
   text-transform: none; 
   border: 3px solid rgb(28, 110, 164); 
   display: inline-block;
-  background: white;
+  background: transparent;
 }
 
 .GameStart_Adventure {
   border: 3px solid rgb(28, 110, 164);
-  color: #e0dfdc;
-  background-color: rgb(28, 110, 164);
+  color: rgb(28, 110, 164);
+  background: white;
   letter-spacing: .1em;
-  font-family: Helvetica, serif;
-  font-size: 20px;
-  letter-spacing: 1px;
-  word-spacing: 2px;
-  font-weight: 700;
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+  letter-spacing: .6px;
+  word-spacing: .5px;
   text-decoration: none;
   font-style: normal;
   font-variant: small-caps;
   text-transform: none;
   border-radius: 10px;
+  padding: 6px;
 }
 
 .Server_info {
-  border: 1px solid;
+  border: 3px solid rgb(28, 110, 164);
   font-family: Helvetica, sans-serif;
   font-size: 5px;
   letter-spacing: -1.2px;
@@ -81,16 +81,18 @@ li {
   font-variant: normal;
   text-transform: none;
   border-radius: 10px;
+  background: white;
 }
 
 .User_Name {
   font-family: Helvetica, sans-serif;
   font-size: 25px;
   word-spacing: 1px;
-  color: #000000;
+  color: rgb(28, 110, 164);
   text-decoration: none solid rgb(68, 68, 68);
   border-bottom: 1px solid black;
   margin: 3px;
+  padding: 0 0 3px 0;
 }
 
 .Server_status {
@@ -123,11 +125,21 @@ li {
   margin: 8px;
 }
 
+.error {
+  width: 380px;
+  border: 1px solid rgb(179, 179, 179);
+  margin: 8px;
+  border-radius: 4px;
+  padding: 0px 4px;
+  color: red;
+}
+
 .player_message {
   color: red;
-  border: 1px solid black;
+  border: 3px solid rgb(28, 110, 164);
   border-radius: 10px;
   margin-bottom: 15px;
+  background: white;
 }
 
 .login-text {
