@@ -56,9 +56,9 @@ li {
   color: #e0dfdc;
   background-color: rgb(28, 110, 164);
   letter-spacing: .1em;
-  font-family: Helvetica, sans-serif;
+  font-family: Helvetica, serif;
   font-size: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   word-spacing: 2px;
   font-weight: 700;
   text-decoration: none;
@@ -83,13 +83,16 @@ li {
 
 .User_Name {
   font-family: Helvetica, sans-serif;
-  font-size: 27px;
-  letter-spacing: .5px;
+  font-size: 25px;
   word-spacing: 1px;
   color: #000000;
   text-decoration: none solid rgb(68, 68, 68);
   border-bottom: 1px solid black;
   margin: 3px;
+}
+
+.Server_status {
+  font-size: 12px;
 }
 
 .player_message {

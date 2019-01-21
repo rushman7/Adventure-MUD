@@ -96,19 +96,19 @@ class GameStart extends React.Component {
       <div className="GameStart">
         <div>
           <p className="GameStart_Adventure">
-          Lambda MUD Adventure
+          Adventure MUD
           </p>
         </div>
         <div className="Server_info">
-          <div className="User_Name">
-            <h3>Welcome, {this.state.player.name}!</h3>
+          <h1 className="User_Name">Welcome, {this.state.player.name}!</h1>
+          <div className="Server_status">
+            <h2>Location: {this.state.player.title}</h2>
+            <h2>Description: {this.state.player.description}</h2>
+            <h2>{this.state.player.error_msg}</h2>
+            <h2>Players In This Room: {this.state.player.players.map(player => {
+              return <li className="user-list" key={Math.random()}>{player}</li>
+              })}</h2>
           </div>
-          <h4>Location: {this.state.player.title}</h4>
-          <h4>Description: {this.state.player.description}</h4>
-          <h5>{this.state.player.error_msg}</h5>
-          <h4>Players In This Room: {this.state.player.players.map(player => {
-            return <li className="user-list" key={Math.random()}>{player}</li>
-            })}</h4>
         </div>
         <br />
         <div className="Directional_Keys">
