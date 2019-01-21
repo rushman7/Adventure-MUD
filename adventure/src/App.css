@@ -65,6 +65,7 @@ li {
   font-style: normal;
   font-variant: small-caps;
   text-transform: none;
+  border-radius: 10px;
 }
 
 .Server_info {
@@ -79,6 +80,7 @@ li {
   font-style: normal;
   font-variant: normal;
   text-transform: none;
+  border-radius: 10px;
 }
 
 .User_Name {
@@ -97,6 +99,9 @@ li {
 
 .player_message {
   color: red;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .login-text {
@@ -111,11 +116,23 @@ li {
   background: white;
   outline: none;
   margin-bottom: 3px;
+  color:rgb(28, 110, 164);
 }
 
 .login-button:hover {
   transform: scale(1.1);
   background-color: rgb(217, 233, 243);
+}
+
+.input {
+  margin-bottom: 20px;
+  position: relative;
+  border: 2px solid rgb(28, 110, 164);
+  border-radius: 20px;
+  height: 18px;
+  padding: 4px 11px 4px 14px;
+  margin-right: 4px;
+  outline: none;
 }
 
 .directional-button-N {
@@ -173,8 +190,4 @@ li {
 }
 .directional-button-W:hover {
   transform: scale(1.5);
-}
-
-.input {
-  margin-bottom: 20px;
 }
