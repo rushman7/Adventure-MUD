@@ -1,10 +1,8 @@
 import React from 'react';
 import Authenticate from './Authenticate';
 import axios from 'axios';
-import { Button, Input } from 'reactstrap';
 import Pusher from 'pusher-js';
 import { Link } from 'react-router-dom';
-import chatbubble from './images/chatbubble.png'
 
 var pusher = new Pusher('256c71d4c75bd50bba8d', {
   cluster: 'us2'
@@ -130,13 +128,13 @@ class GameStart extends React.Component {
             }) : null}
         </div>
         <form className="Message">
-          <Input 
+          <input 
             className="input"
             name='message' 
             onChange={this.handleChange} 
             placeholder='type message here...' 
             value={this.state.message}>
-          </Input>
+          </input>
           <button className="login-button" onClick={this.charSay}>Send</button>
         </form>
         <Link to="/api/login">
