@@ -45,29 +45,26 @@ class Login extends React.Component {
   render() {
     return (
       <Form className="GameStart">
-        <FormGroup>
-          <h2 className="login-text">Login</h2>
-          <h7>If you have an account, please log in.</h7>
-          <Input 
-            type="text"
-            placeholder="Username"
-            name="username"
-            value={this.state.username}
-            onChange={this.inputChangeHandler}
-          />
-        </FormGroup>
-        <FormGroup>
-          <Input 
-            type="Password"
-            placeholder="password"
-            name="password"
-            value={this.state.password}
-            onChange={this.inputChangeHandler}
-          />
-        </FormGroup>
+        <h2 className="login-text">Login</h2>
+        <h7>If you have an account, please log in.</h7>
+        <input
+          className="input"
+          type="text"
+          placeholder="Username"
+          name="username"
+          value={this.state.username}
+          onChange={this.inputChangeHandler}
+        />
+        <input
+          className="input"
+          type="Password"
+          placeholder="password"
+          name="password"
+          value={this.state.password}
+          onChange={this.inputChangeHandler}
+        />
+        <br />
         <button class="login-button" onClick={this.submitHandler}>Login</button>
-        <br />
-        <br />
         <h4>Not registered?</h4>
         <Link to="/api/registration">
           <button type="button" className="login-button">Create an Account</button>

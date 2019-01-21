@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { Button, Label, Input, Form, FormGroup, CardText, Card } from 'reactstrap';
+import { Label, Form, FormGroup, CardText, Card } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 class Register extends React.Component {
@@ -46,20 +46,20 @@ class Register extends React.Component {
   render() {
     return (
       <Form className="GameStart">
+        <h2 className="login-text">Create an Account</h2>
+        <Label for="exampleEmail">Username: </Label>
+        <input 
+          className="input"
+          type="text"
+          placeholder="username"
+          name="username"
+          value={this.state.username}
+          onChange={this.inputChangeHandler}
+        />
         <FormGroup>
-          <h2 className="login-text">Create an Account</h2>
-          <Label for="exampleEmail">Username</Label>
-          <Input 
-            type="text"
-            placeholder="username"
-            name="username"
-            value={this.state.username}
-            onChange={this.inputChangeHandler}
-          />
-        </FormGroup>
-        <FormGroup>
-          <Label for="examplePassword">Password</Label>
-          <Input 
+          <Label for="examplePassword">Password: </Label>
+          <input 
+            className="input"
             type="password"
             placeholder="password"
             name="password1"
@@ -68,26 +68,26 @@ class Register extends React.Component {
           />
         </FormGroup>
         <FormGroup>
-          <Label for="examplePassword">Confirm Password</Label>
-          <Input 
+          <Label for="examplePassword">Confirm Password: </Label>
+          <input 
+            className="input"
             type="password"
             placeholder="confirm password"
             name="password2"
             value={this.state.password2}
             onChange={this.inputChangeHandler}
           />
-        </FormGroup><br />
+        </FormGroup>
         <Card>
           <CardText>By clicking "Accept the ToS" you are agreeing to have an awesome adventure in this MUD based game!
           </CardText>
-        </Card><br />
+        </Card>
             <Label check>
-                <Input type="checkbox" />
+                <input type="checkbox" />
                 Accept the ToS!
               </Label>
-            <br /><br />
+            <br />
             <button class="login-button" onClick={this.submitHandler}>Register</button>
-            <br /><br />
             <Link to="/api/login">
           <button type="button" className="login-button">Already a member?</button>
         </Link>
