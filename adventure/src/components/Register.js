@@ -86,8 +86,8 @@ class Register extends React.Component {
             <br />
             <button class="login-button" onClick={this.submitHandler}>Register</button>
             <Link to="/api/login">
-          <button type="button" className="login-button">Already a member?</button>
-        </Link>
+              <button type="button" className="login-button">Already a member?</button>
+            </Link>
       </Form>
     )
   }

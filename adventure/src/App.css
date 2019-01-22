@@ -33,6 +33,12 @@ li {
   to { transform: rotate(360deg); }
 }
 
+.welcome-text {
+  color: white;
+  font-size: 34px;
+  padding: 30px;
+}
+
 .GameStart {
   margin: 25px 0px 25px 0px;
   color: rgb(0, 0, 0); 
