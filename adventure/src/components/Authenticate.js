@@ -21,4 +21,4 @@ const Authenticate = Protected =>
     }
   }
 
-  export default Authenticate
+  export default Authenticate;
