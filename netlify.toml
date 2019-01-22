@@ -1,0 +1,4 @@
+[build]
+base = "adventure/"
+publish = "adventure/build"
+command = "yarn build"
