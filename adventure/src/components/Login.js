@@ -46,7 +46,7 @@ class Login extends React.Component {
     return (
       <Form className="GameStart">
         <h2 className="login-text">Login</h2>
-        <h7>If you have an account, please log in.</h7>
+        <h4>If you have an account, please log in.</h4>
         <input
           className="input"
           type="text"
@@ -64,7 +64,7 @@ class Login extends React.Component {
           onChange={this.inputChangeHandler}
         />
         <br />
-        <button class="login-button" onClick={this.submitHandler}>Login</button>
+        <button className="login-button" onClick={this.submitHandler}>Login</button>
         <h4>Not registered?</h4>
         <Link to="/api/registration">
           <button type="button" className="login-button">Create an Account</button>

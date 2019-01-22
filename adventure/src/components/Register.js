@@ -84,7 +84,7 @@ class Register extends React.Component {
                 Accept the ToS!
               </Label>
             <br />
-            <button class="login-button" onClick={this.submitHandler}>Register</button>
+            <button className="login-button" onClick={this.submitHandler}>Register</button>
             <Link to="/api/login">
               <button type="button" className="login-button">Already a member?</button>
             </Link>

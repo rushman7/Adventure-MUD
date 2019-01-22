@@ -118,13 +118,14 @@ class GameStart extends React.Component {
           <button direction='w' onClick={this.charMove} className="directional-button-W">W</button>
         </div>
         <br />
-        <div className='Chatlog'>
+        <div className='chatlog'>
+          <h3 className="User_Name">Adventure Chat</h3>
           {this.state.messages ? 
             this.state.messages.map((message) => {
               return (
-                <div className="player_message">
+                <li className="player_message" key={Math.random()}>
                   {this.state.player.name}: {message}
-                </div>)
+                </li>)
             }) : null}
         </div>
         <form className="Message">
