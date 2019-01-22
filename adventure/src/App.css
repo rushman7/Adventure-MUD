@@ -48,7 +48,7 @@ li {
   text-transform: none; 
   border: 3px solid rgb(28, 110, 164); 
   display: inline-block;
-  background: transparent;
+  background: white;
 }
 
 .GameStart_Adventure {
@@ -142,6 +142,7 @@ li {
 }
 
 .login-text {
+  padding-bottom: 10px;
   border-bottom: 1px solid black;
 }
 
@@ -162,6 +163,7 @@ li {
 }
 
 .input {
+  margin-top: 8px;
   margin-bottom: 20px;
   position: relative;
   border: 2px solid rgb(28, 110, 164);

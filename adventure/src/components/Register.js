@@ -47,7 +47,6 @@ class Register extends React.Component {
     return (
       <Form className="GameStart">
         <h2 className="login-text">Create an Account</h2>
-        <Label for="exampleEmail">Username: </Label>
         <input 
           className="input"
           type="text"
@@ -57,7 +56,6 @@ class Register extends React.Component {
           onChange={this.inputChangeHandler}
         />
         <FormGroup>
-          <Label for="examplePassword">Password: </Label>
           <input 
             className="input"
             type="password"
@@ -68,7 +66,6 @@ class Register extends React.Component {
           />
         </FormGroup>
         <FormGroup>
-          <Label for="examplePassword">Confirm Password: </Label>
           <input 
             className="input"
             type="password"
