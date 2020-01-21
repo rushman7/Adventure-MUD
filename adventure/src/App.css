@@ -1,7 +1,8 @@
 .App {
   text-align: center;
   background-image: url('https://media2.giphy.com/media/U3qYN8S0j3bpK/giphy.gif?cid=3640f6095c42617f394a4e4763192474'); 
-  background-size: auto;
+  background-size: cover;
+  height: 100vh;
 }
 
 .App-logo {
