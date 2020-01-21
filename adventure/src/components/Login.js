@@ -29,7 +29,7 @@ class Login extends React.Component {
     };
 
     axios
-      .post('https://adventure-.herokuapp.com/api/login', user)
+      .post('https://adventure-7024.herokuapp.com/api/login', user)
       .then(response => {
         const token = response.data.key;
         console.log(response)

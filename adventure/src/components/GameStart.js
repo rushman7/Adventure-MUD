@@ -36,7 +36,7 @@ class GameStart extends React.Component {
 
   componentDidMount() {
     axios
-      .get('https://adventure-.herokuapp.com/api/adv/init', {
+      .get('https://adventure-7024.herokuapp.com/api/adv/init', {
         headers: {
           Authorization: 'Token ' + localStorage.getItem('key'),
           "Content-Type": "application/json"
@@ -58,7 +58,7 @@ class GameStart extends React.Component {
     this.setState({ messages: [] })
     const direction = e.target.getAttribute('direction')
     axios
-      .post('https://adventure-.herokuapp.com/api/adv/move/', {"direction": direction}, {
+      .post('https://adventure-7024.herokuapp.com/api/adv/move/', {"direction": direction}, {
         headers: {
           Authorization: 'Token ' + localStorage.getItem('key'),
           "Content-Type": "application/json"
@@ -77,7 +77,7 @@ class GameStart extends React.Component {
     this.state.messages.push(this.state.message)
     this.setState({message: ''})
     axios
-      .post('https://adventure-.herokuapp.com/api/adv/say/', {"message": this.state.message}, {
+      .post('https://adventure-7024.herokuapp.com/api/adv/say/', {"message": this.state.message}, {
         headers: {
           Authorization: 'Token ' + localStorage.getItem('key'),
           "Content-Type": "application/json"

@@ -30,7 +30,7 @@ class Register extends React.Component {
     };
 
     axios
-      .post('https://adventure-.herokuapp.com/api/registration', user)
+      .post('https://adventure-7024.herokuapp.com/api/registration', user)
       .then(response => {
         const token = response.data;
         console.log(response)
