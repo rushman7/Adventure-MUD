@@ -5,7 +5,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "build": "^0.1.4",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "preact": "^8.3.1",
     "preact-cli": "^2.2.1",
     "prop-types": "^15.6.2",
